@@ -8,52 +8,30 @@ from cv.models import OpenSourceProject
 # Use small numbers (10, 20, 30, ...) to promote, larger to demote.
 
 OPEN_SOURCE_PROJECTS = (
-    OpenSourceProject(
-        name="sqlalchemy-easy-softdelete",
-        repo="flipbit03/sqlalchemy-easy-softdelete",
-        tagline="Drop-in soft-deletion for SQLAlchemy models.",
-        description="""
-            Mixin that adds soft-delete semantics to SQLAlchemy 1.4/2.x models without touching application code: filtered queries, cascade rules, and admin escape hatches all work transparently. Used in production across multiple Python services.
-        """,
-        keywords=("Python", "SQLAlchemy", "soft-delete", "ORM"),
-    ),
-    OpenSourceProject(
-        name="cadurso",
-        repo="flipbit03/cadurso",
-        tagline="Authorization framework for Python applications (RBAC / ABAC).",
-        description="""
-            Library for declaring and evaluating authorization rules in Python. Supports both role-based and attribute-based access control with a small, type-friendly API designed to live next to your domain models.
-        """,
-        keywords=("Python", "RBAC", "ABAC", "authorization", "type-safe"),
-    ),
-    OpenSourceProject(
-        name="lineark",
-        repo="flipbit03/lineark",
-        tagline="Unofficial Linear CLI for humans and coding agents.",
-        description="""
-            Rust CLI for the Linear issue tracker, designed equally for terminal use and for scripting/agent integration. Exposes a structured SDK surface that LLM-based coding agents can drive directly.
-        """,
-        keywords=("Rust", "CLI", "Linear API", "SDK", "agent-friendly", "agentic-tooling"),
-        order=15,
-    ),
-    OpenSourceProject(
-        name="terminal-use",
-        repo="flipbit03/terminal-use",
-        tagline="tu: tmux for your coding agent.",
-        description="""
-            Rust virtual-terminal harness that lets coding agents (Claude Code and friends) drive interactive TUIs (htop, vim, ncurses installers) via screenshot and keystroke primitives. Wraps a vt100 emulator under an alacritty-style backend.
-        """,
-        keywords=("Rust", "vt100", "alacritty", "agent-friendly", "agentic-tooling", "TUI automation"),
-        order=10,
-    ),
-    OpenSourceProject(
-        name="forestui",
-        repo="flipbit03/forestui",
-        tagline="TUI git-worktree + Claude Code session manager.",
-        description="""
-            Python TUI that manages parallel git worktrees and the Claude Code sessions running inside them, so multiple agent sessions can work on isolated branches without stepping on each other.
-        """,
-        keywords=("Python", "TUI", "git worktree", "Claude Code"),
-        order=20,
-    ),
-)
+OpenSourceProject(
+    name="esp32-snake-game",
+    repo="hiroshimorowaka/esp32-snake-game",
+    tagline="Snake game para ESP32 escrito em Rust bare-metal (no_std).",
+    description="""
+    Implementação do clássico Snake game rodando diretamente no ESP32-WROOM-32,
+    desenvolvida em Rust sem a biblioteca padrão (no_std). Utiliza display OLED
+    SSD1306 via I2C e quatro botões físicos para controle. Projeto de estudo em
+    sistemas embarcados com Rust, usando o ecossistema esp-rs (esp-hal, espflash,
+    espup).
+    """,
+    keywords=("Rust", "ESP32", "embarcados", "no_std", "OLED", "SSD1306", "esp-rs"),
+),
+OpenSourceProject(
+    name="esp32-pong-game",
+    repo="hiroshimorowaka/esp32-pong-game",
+    tagline="Jogo Pong para ESP32 escrito em Rust bare-metal (no_std).",
+    description="""
+    Implementação do clássico Pong Game rodando diretamente no ESP32-WROOM-32,
+        desenvolvida em Rust sem a biblioteca padrão (no_std). Utiliza display OLED
+        SSD1306 via I2C e quatro botões físicos para controle. Projeto de estudo em
+        sistemas embarcados com Rust, usando o ecossistema esp-rs (esp-hal, espflash,
+        espup)
+    """,
+    keywords=("Rust", "ESP32", "Embarcado", "no_std", "esp-hal", "IoT"),
+),
+  )

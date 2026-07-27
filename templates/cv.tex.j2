@@ -3,10 +3,10 @@
 
 \cvheader{((( cv.personal.name | esc )))}{((( cv.personal.title | esc )))}{((( cv.personal | contact_strip )))}
 
-\section*{Profile}
+\section*{Sobre}
 ((( cv.personal.summary | md )))
 
-\section*{Experience}
+\section*{Experiência}
 ((* for company in cv.companies | sort_companies *))
 ((* if not loop.first *))\cvcompanybreak((* endif *))
 \cvcompanyhead{((( company.label | esc )))}{((( company.one_liner | esc if company.one_liner else '' )))}
@@ -20,7 +20,7 @@
 ((* endfor *))
 
 ((* if cv.open_source *))
-\section*{Open Source}
+\section*{Open Source / Código Aberto}
 ((* for proj in cv.open_source | sort(attribute='order') *))
 ((* set badge = [] *))
 ((* if proj.stars is not none *))((* set _ = badge.append('· $\\bigstar$\\,' ~ proj.stars) *))((* endif *))
@@ -35,13 +35,13 @@
 ((* endif *))
 
 \needspace{10\baselineskip}
-\section*{Education}
+\section*{Educação}
 ((* for edu in cv.education *))
 \cveducation{((( edu.institution | esc )))}{((( edu.degree | esc ))) ((* if edu.field *))-- ((( edu.field | esc )))((* endif *))}{((( edu | year_range )))}
 ((* endfor *))
 
 \needspace{6\baselineskip}
-\section*{Languages}
+\section*{Idiomas}
 ((* for lang in cv.languages *))
 \cvlanguagerow{((( lang.name | esc )))}{((( lang.proficiency | esc )))}
 ((* endfor *))
