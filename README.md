@@ -2,7 +2,7 @@
 
 Cadu's _Curriculum Vitae_ as code.
 
-Latest PDF: see the [latest release](https://github.com/flipbit03/cv/releases/latest).
+Latest PDF: see the [latest release](https://github.com/hiroshimorowaka/cv/releases/latest).
 
 ## Stack
 
