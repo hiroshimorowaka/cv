@@ -13,7 +13,7 @@ SG_SISTEMAS = Company(
             location="Brasil",
             remote=False,
             description="""
-Atuei no desenvolvimento de uma plataforma completa de pagamentos, trabalhando desde aplicações Android e bibliotecas de integração até APIs backend e ferramentas administrativas.
+Atuei em uma plataforma completa de pagamentos, desenvolvendo desde aplicações Android e bibliotecas de integração até APIs backend e ferramentas administrativas.
 
 - Desenvolvi bibliotecas Android para integração com Smart POS e PinPads (USB e Bluetooth), criando uma arquitetura reutilizável com suporte aos provedores SiTef, Scope e Rede.
 
@@ -36,7 +36,7 @@ Atuei no desenvolvimento de uma plataforma completa de pagamentos, trabalhando d
                 "PostgreSQL",
                 "Docker",
                 "Git",
-                "SQLite"
+                "SQLite",
             ),
         ),
     ),

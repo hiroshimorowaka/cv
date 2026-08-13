@@ -1,3 +1,5 @@
+from pydantic import HttpUrl
+
 from cv.models import Personal
 
 PERSONAL = Personal(
@@ -5,13 +7,11 @@ PERSONAL = Personal(
     title="Desenvolvedor de Software | Android & Backend | Kotlin · Java · TypeScript",
     location="Brasil",
     email="guilhermecabral1204@gmail.com",
-    github="https://github.com/hiroshimorowaka",
-    linkedin="https://www.linkedin.com/in/guilherme-cabral-130689254/",
+    github=HttpUrl("https://github.com/hiroshimorowaka"),
+    linkedin=HttpUrl("https://www.linkedin.com/in/guilherme-cabral-130689254/"),
     summary="""
-Desenvolvedor de software com experiência no desenvolvimento de aplicações Android, APIs backend e integrações entre sistemas.\n 
-Trabalho principalmente com Kotlin, Java e TypeScript, criando soluções escaláveis e confiáveis para ambientes que exigem alto nível de estabilidade.\n
-
-Tenho experiência com arquitetura de aplicações, processamento de transações, persistência de dados e comunicação entre diferentes plataformas. \n
-Possuo facilidade para aprender novas tecnologias, resolver problemas complexos e entregar código limpo, bem estruturado e de fácil manutenção.
+Desenvolvedor de software com experiência no desenvolvimento de aplicações Android, APIs backend e integrações entre sistemas.
+Tenho experiências recentes com Kotlin, Java e TypeScript, criando soluções escaláveis, confiáveis e distribuídas para ambientes que exigem alto nível de estabilidade, envolvendo processamento de transações financeiras, persistência de dados e comunicação entre diferentes plataformas e dispositivos.
+Curiosidade é o meu ponto forte, adoro aprender novas tecnologias, investigar problemas complexos e entregar soluções limpas e bem documentadas.
 """,
 )

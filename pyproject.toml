@@ -14,10 +14,7 @@ dependencies = [
 cv = "cv.cli:main"
 
 [dependency-groups]
-dev = [
-    "mypy>=1.13",
-    "ruff>=0.8",
-]
+dev = ["mypy>=1.13", "ruff>=0.8"]
 
 [build-system]
 requires = ["hatchling"]
@@ -51,13 +48,13 @@ select = [
     "TID",  # tidy imports
 ]
 ignore = [
-    "E501",  # line too long: prose lines in CV data are intentionally long
+    "E501", # line too long: prose lines in CV data are intentionally long
 ]
 
 [tool.ruff.lint.per-file-ignores]
 "src/cv/data/**/*.py" = [
-    "E501",  # long prose lines in description blocks
-    "RUF001",  # ambiguous unicode in MD prose (curly apostrophes etc.)
+    "E501",   # long prose lines in description blocks
+    "RUF001", # ambiguous unicode in MD prose (curly apostrophes etc.)
 ]
 
 [tool.ruff.format]
@@ -76,6 +73,9 @@ disallow_untyped_decorators = true
 [[tool.mypy.overrides]]
 module = ["watchfiles.*"]
 ignore_missing_imports = true
+
+[tool.pydantic-mypy]
+init_typed = true
 
 [tool.pyright]
 include = ["src"]
